@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            h1{
+                text-align: center;
+                text-decoration: underline;
+            }
+            p{
+                text-align: center;
+                font-size: x-large;
+            }
+            .container{
+               border-radius: 5px;
+               background-color: #f2f2f2;
+               padding: 10px;
+           }
+           .column{
+               float: left;
+               width: 50%;
+               margin-top: 6px;
+               padding: 20px;
+           }
+           .row:after{
+               contain: "";
+               display: table;
+               clear: both;
+           }
+           @media screen and (max-width: 600px) {
+           .column, input[type=submit] {
+               width: 100%;
+               margin-top: 0;
+              }
+           }
+
+        </style>
+    </head>
+
+    <body>
+       <div class="container">
+           <h1>Contact Us</h1>
+
+           <div class="row">
+                <div class="column">
+                   <img src="Downloads/contact.jpeg" style="width: 100%;" />
+                </div>
+               
+                <div class="column">
+                   <p>You can contact me at my whatsapp number:<br />
+                    0311-0817610</p>
+                    <br />
+                    <p>Or you can email me at:<br />
+                       AraibKhan93@gmail.com
+                    </p>
+                </div>
+            </div>        
+    </body>
+</html>

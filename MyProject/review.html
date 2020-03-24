@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+           h1,p{
+               text-align: center;
+           }
+           input[type=text],select,textarea{
+               width: 100%;
+               padding: 12px;
+               border: 1px solid #ccc;
+               margin-top: 6px;
+               margin-bottom: 16px;
+               resize: vertical;
+           }
+           input[type=submit]{
+               background-color: #4CAF50;
+               color: white;
+               padding: 12px 20px;
+               border: none;
+               cursor: pointer;
+           }
+           input[type=submit]:hover{
+               background-color: #45a049;
+           }
+           .container{
+               border-radius: 5px;
+               background-color: #f2f2f2;
+               padding: 10px;
+           }
+           .column{
+               float: left;
+               width: 50%;
+               margin-top: 6px;
+               padding: 20px;
+           }
+           .row:after{
+               contain: "";
+               display: table;
+               clear: both;
+           }
+           @media screen and (max-width: 600px) {
+           .column, input[type=submit] {
+               width: 100%;
+               margin-top: 0;
+              }
+           }
+
+        </style>
+    </head>
+
+    <body>
+
+      <div class="container">
+         <h1>Your Review</h1>
+         <p>Leave us a comment so that we can make our service better.</p>
+
+         <div class="row">
+             <div class="column">
+                 <img src="Downloads/review.jpg" style="width: 100%;"/>
+             </div>
+             
+             <div class="column">
+                 <form action="http://www.example.com/profile.php">
+                    <input type="text" name="First Name" placeholder="Your Name.." />
+                    <input type="text" name="Last Name" placeholder="Your Last Name.." />
+                    <select name="Countries">
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Austrailia">Austrailia</option>
+                    </select> 
+                    <textarea name="Your Review" placeholder="Write something..."></textarea>
+                    <input type="submit" value="Submit" />
+                 </form>
+             </div>
+         </div>
+      </div>
+    </body>
+    
+</html>

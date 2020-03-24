@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+            .head{
+                width: 100%;
+            }
+            .header{
+                color: white;
+                text-align: center;
+            }
+            h1,h2,h4{
+                font-size: 30px;
+                text-decoration: underline;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p{
+                font-size: 20px;
+            }
+            .navbar{
+                overflow: hidden;
+                background-color: black;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            .navbar a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .side{
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+            .main{
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+            .myimg{
+                width: 40%;
+                padding: 20px;
+            }
+            .pic{
+                align-content: center;
+                width: 200px;
+                height: 170px;
+            }
+            .foot{
+                width: 100%;
+            }
+            .footer{
+                padding: 20px;
+                width: 100%;
+            }
+            @media screen and (max-width: 700px) {
+            .row {   
+               flex-direction: column;
+               }
+            }
+            @media screen and (max-width: 400px) {
+            .navbar a {
+               float: none;
+               width: 100%;
+               }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <img src="Downloads/header.jpg" class="head" />
+
+        </div>
+        
+        <div class="navbar">
+            <a href="contact.html" target="_blank">Contact</a>
+            <a href="review.html" target="_blank">Review</a>
+            <a href="about.html" target="_blank">About</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+               <h2>Some References</h2>
+        
+               <p>If you guys want to read more about these technologies,
+                    you can go on these links given below:</p>
+                
+               <h3>Cloud Computing</h3>
+               <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank">Click Here</a> 
+               <br />
+               
+               <h3>Artificial Intelligence</h3>
+               <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Click Here</a>
+
+               <h3>Blockchain Technoloy</h3>
+               <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank">Click Here</a>
+
+               <h3>Internet of Things</h3>
+               <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank">Click Here</a>
+
+               <h2>Today's Revolution</h2>
+
+               <h3>Quantum Computing</h3>
+               <img src="Downloads/quantum.jpeg" class="pic" /><br />
+               <p>Quantum computing is the study of a non-classical model of computation. 
+                   Whereas traditional models of computing such as the Turing machine or 
+                   Lambda calculus rely on "classical" representations</p><a href="https://en.wikipedia.org/wiki/Quantum_computing" target="_blank">Read More</a>
+               
+               <h3>Agile Software Development</h3>
+               <img src="Downloads/agile.jpeg" class="pic" /><br />
+               <p>Agile software development comprises various approaches to software 
+                   development under which requirements and solutions evolve through 
+                   the collaborative effort</p><a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank">Read More</a> 
+                   
+
+            </div>
+
+            <div class="main">
+                <h2>4IR Technologies</h2>
+
+                <h4>Cloud Native Computing</h4>
+                <div class="myimg" style="height: 200px;">
+                    <img src="Downloads/cnc.jpeg" class="pic"/>
+                </div>
+                <p>Cloud computing is the on-demand availability of computer system resources, 
+                    especially data storage and computing power, without direct active management
+                     by the user.</p>
+
+                <h4>Artificial Intelligence</h4>
+                <div class="myimg" style="height: 200px;">
+                    <img src="Downloads/ai.jpeg" class="pic"/>
+                </div>
+                <p>In computer science, artificial intelligence, sometimes called machine 
+                    intelligence, is intelligence demonstrated by machines, in contrast to 
+                    the natural intelligence displayed by humans.</p>
+                    
+                <h4>Blockchain Technology</h4>
+                <div class="myimg" style="height: 200px;">
+                    <img src="Downloads/bc.jpg" class="pic"/>
+                </div>
+                <p>A blockchain, originally block chain, is a growing list of records,
+                    called blocks, that are linked using cryptography. Each block contains 
+                    a cryptographic hash of the previous block, a timestamp.</p>
+                
+                <h4>Internet of Things</h4>
+                <div class="myimg" style="height: 200px;">
+                    <img src="Downloads/iot.webp" class="pic"/>
+                </div>
+                <p>The Internet of Things is a system of interrelated computing devices, 
+                    mechanical and digital machines, objects, animals or people that are 
+                    provided with unique identifiers.</p>    
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="Downloads/footer1.webp" class="foot"/>
+        </div>
+
+    </body>
+</html>
